@@ -48,6 +48,18 @@ li {
 }
 
 .sec-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.75rem;
+  margin-bottom: 60px;
+  text-align: center;
+
+  &::before, &::after {
+    border-top: 1px solid;
+    content: "";
+    width: 28%;
+  }
 }
 
 /*-------------------------------------------
@@ -86,3 +98,4 @@ Video
     z-index: -10;
   }
 }
+

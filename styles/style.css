@@ -50,6 +50,27 @@ li {
   display: block;
 }
 
+.sec-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.75rem;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.sec-title::before, .sec-title::after {
+  border-top: 1px solid;
+  content: "";
+  width: 28%;
+}
+
 /*-------------------------------------------
 ヘッダー
 -------------------------------------------*/
