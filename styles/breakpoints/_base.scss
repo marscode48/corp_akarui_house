@@ -37,8 +37,39 @@ li {
   margin: 0 auto;
 }
 .site-title {
+  width: 200px;
+  line-height: 1px;
+  margin-bottom: 30px;
+
+  & a {
+    display: block;
+  }
+  
 }
 
 .sec-title {
+}
+
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+.header {
+  width: 300px;
+  height: 100%;
+  background-color: $cWhite;
+  padding: 40px 50px 30px 45px;
+  position: fixed;
+  top: 0;
+  /* 高さが低い場合は縦スクロールを出す */
+  overflow-y: auto;
+
+  &__navi li {
+    font-size: 0.875rem;
+    padding: 8px 0;
+  }
+
+  &__menu {
+    margin-bottom: 60px;
+  }
 }
 
