@@ -315,6 +315,53 @@ Flow
   margin-bottom: 0;
 }
 
+/*-------------------------------------------
+Contact
+-------------------------------------------*/
+.contact {
+  background-color: #FFFFFF;
+  margin-bottom: 80px;
+}
+
+.contact__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 60px;
+}
+
+.contact__item {
+  width: 30%;
+  border: solid 1px #121212;
+  display: block;
+  font-size: 0.875rem;
+  position: relative;
+  padding: 50px 0;
+  text-align: center;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.contact__item::before {
+  content: "";
+  border-top: 20px solid transparent;
+  border-right: 20px solid #121212;
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+}
+
+.contact__item:hover {
+  outline: solid 3px #121212;
+}
+
+.contact__item img {
+  margin-top: 5px;
+}
+
 @media (max-width: 960px) {
   /******************************************************************
 
