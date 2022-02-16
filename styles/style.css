@@ -571,5 +571,11 @@ Contact
   .project__list li:nth-last-child(2) {
     margin-bottom: 30px;
   }
+  /*-------------------------------------------
+  Feauture
+  -------------------------------------------*/
+  .feauture {
+    padding-bottom: 60px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
