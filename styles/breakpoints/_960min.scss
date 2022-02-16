@@ -7,6 +7,9 @@
   .container {
     margin-left: 0;
   }
+  .wrapper {
+    padding: 60px 20px;
+  }
   .site-title {
     width: 180px;
     margin-bottom: 0;
@@ -14,7 +17,14 @@
     left: 18px;
     top: 10px;
   }
-
+  .sec-title {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+  
+    &::before, &::after {
+      width: 18%;
+    }
+  }
 
   /*-------------------------------------------
   ヘッダー
@@ -131,5 +141,23 @@
       left: 0;
       right: 0;
       margin: 0 auto;
+    }
+  }
+
+  /*-------------------------------------------
+  Project
+  -------------------------------------------*/
+  .project {
+    &__list {
+      flex-direction: column;
+
+      & li {
+        width: 100%;
+        margin-bottom: 30px;
+  
+        &:nth-last-child(2) {
+          margin-bottom: 30px;
+        }
+      }
     }
   }
