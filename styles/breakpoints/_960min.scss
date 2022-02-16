@@ -4,4 +4,117 @@
 
   ******************************************************************/
 
-  
+  .container {
+    margin-left: 0;
+  }
+
+  .site-title {
+    width: 180px;
+    margin-bottom: 0;
+    position: relative;
+    left: 18px;
+    top: 10px;
+  }
+
+  /*-------------------------------------------
+  ヘッダー
+  -------------------------------------------*/
+  .header {
+    width: 100%;
+    height: 72px;
+    padding: 0;
+    z-index: 10;
+
+    &__navi {
+      width: 300px;
+      background: $cWhite;
+      padding: 25px;
+      position: fixed;
+      top: 0;
+      left: -300px;
+      bottom: 0;
+      opacity: 0;
+      overflow-y: auto;
+      transition: 0.5s;
+      z-index: 20;
+
+      .open & {
+        left: 0;
+        opacity: 1;
+      }
+
+      & li {
+        padding: 10px 0;
+      }
+    }
+
+    &__menu {
+      margin-bottom: 30px;
+    }
+  }
+
+  .humburger {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: fixed;
+    top: 22px;
+    right: 18px;
+    transition: 0.5s;
+    z-index: 20;
+
+    & span {
+      width: 30px;
+      height: 2px;
+      background-color: $cBlack;
+      border-radius: 4px;
+      display: block;
+      position: absolute;
+      left: 0;
+      transition: 0.5s;
+
+      &:nth-child(1) {
+        top: 4px;
+      }
+
+      &:nth-child(2) {
+        top: 14px;
+      }
+
+      &:nth-child(3) {
+        bottom: 4px;
+      }
+    }
+
+    .open & span {
+      background-color: $cWhite;
+
+      &:nth-child(1) {
+        transform: translateY(10px) rotate(-315deg);
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:nth-child(3) {
+        transform: translateY(-10px) rotate(315deg);
+      }
+    }
+  }
+
+  #mask {
+    display: none;
+    transition: 0.5s;
+
+    .open & {
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      cursor: pointer;
+      display: block;
+      opacity: 0.8;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 10;
+    }
+  }
