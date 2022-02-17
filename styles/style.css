@@ -320,7 +320,7 @@ Contact
 -------------------------------------------*/
 .contact {
   background-color: #FFFFFF;
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 
 .contact__link {
@@ -610,6 +610,29 @@ Contact
   }
   .flow__description {
     margin-left: 50px;
+  }
+  /*-------------------------------------------
+  Contact
+  -------------------------------------------*/
+  .contact {
+    padding-bottom: 60px;
+  }
+  .contact__link {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 30px;
+  }
+  .contact__item {
+    width: 60%;
+    margin: 20px 0 0 0;
+  }
+  .contact__item:first-child {
+    margin-top: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
