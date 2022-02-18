@@ -634,5 +634,15 @@ Contact
   .contact__item:first-child {
     margin-top: 0;
   }
+  /*-------------------------------------------
+  フッター
+  -------------------------------------------*/
+  .footer__menu {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer__menu li {
+    margin-bottom: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
