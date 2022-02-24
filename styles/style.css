@@ -480,7 +480,7 @@ Contact
   .header__menu {
     margin-bottom: 30px;
   }
-  .humburger {
+  .hamburger {
     width: 30px;
     height: 30px;
     cursor: pointer;
@@ -491,7 +491,7 @@ Contact
     transition: 0.5s;
     z-index: 20;
   }
-  .humburger span {
+  .hamburger span {
     width: 30px;
     height: 2px;
     background-color: #121212;
@@ -502,26 +502,26 @@ Contact
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }
-  .humburger span:nth-child(1) {
+  .hamburger span:nth-child(1) {
     top: 4px;
   }
-  .humburger span:nth-child(2) {
+  .hamburger span:nth-child(2) {
     top: 14px;
   }
-  .humburger span:nth-child(3) {
+  .hamburger span:nth-child(3) {
     bottom: 4px;
   }
-  .open .humburger span {
+  .open .hamburger span {
     background-color: #FFFFFF;
   }
-  .open .humburger span:nth-child(1) {
+  .open .hamburger span:nth-child(1) {
     -webkit-transform: translateY(10px) rotate(-315deg);
             transform: translateY(10px) rotate(-315deg);
   }
-  .open .humburger span:nth-child(2) {
+  .open .hamburger span:nth-child(2) {
     opacity: 0;
   }
-  .open .humburger span:nth-child(3) {
+  .open .hamburger span:nth-child(3) {
     -webkit-transform: translateY(-10px) rotate(315deg);
             transform: translateY(-10px) rotate(315deg);
   }
