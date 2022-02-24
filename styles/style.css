@@ -401,6 +401,7 @@ Contact
 }
 
 #to-top {
+  opacity: 0;
   width: 50px;
   height: 50px;
   background-color: #121212;
@@ -409,6 +410,8 @@ Contact
   position: fixed;
   bottom: 25px;
   right: 25px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 #to-top::after {
@@ -419,6 +422,10 @@ Contact
   position: relative;
   left: 17px;
   bottom: 3px;
+}
+
+#to-top.inview {
+  opacity: 1;
 }
 
 @media (max-width: 960px) {
