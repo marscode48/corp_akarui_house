@@ -266,7 +266,7 @@ Flow
 
 .flow__figure li::before {
   content: "";
-  border-top: 30px solid #121212;
+  border-top: 30px solid #414141;
   border-left: 100px solid transparent;
   border-right: 100px solid transparent;
   position: absolute;
