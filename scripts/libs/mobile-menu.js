@@ -18,8 +18,7 @@ class MobileMenu {
   }
 
   _addEvent() {
-    this.DOM.hamburger.addEventListener(this.eventType, this._toggle.bind(this)
-    );
+    this.DOM.hamburger.addEventListener(this.eventType, this._toggle.bind(this));
     this.DOM.mask.addEventListener(this.eventType, this._toggle.bind(this));
     this.DOM.navs.forEach((nav) => {
       nav.addEventListener(this.eventType, this._toggle.bind(this));
